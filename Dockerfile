@@ -10,4 +10,4 @@ RUN dpkg -i /tmp/bubblesort.deb || apt-get install -f -y
 
 WORKDIR /usr/local/bin
 
-CMD ["bubblesort"]
+CMD ["sh", "-c", "echo \"5\n5 3 1 4 2\" | bubblesort"]
